@@ -1,4 +1,6 @@
 <?php
+
+// commentaire test hugo
 	
 	$erreur = ' ';
 	// on teste si le visiteur a soumis le formulaire de connexion
