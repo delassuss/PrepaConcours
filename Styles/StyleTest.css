@@ -1,0 +1,46 @@
+
+.Titre
+{
+	background-image:url(/PrepaConcours/Images/Logo.png);
+	Background-size:750px;
+	background-repeat:no-repeat;
+	background-color:#92C6F6;
+	text-align: center; 
+	font-size: 50px;
+	color:white;
+	clear:center;
+	Text-Shadow:#A4A4A4 3px 3px, #A4A4A4 3px 3px;
+	padding:10px;
+}
+
+.Intro
+{
+	text-align:center;
+	color:#000000;
+	Font-Weight: Bold;
+}
+
+.Menu
+{
+	margin-top:15px;
+	margin-left:15%;
+	margin-right:15%;
+	padding:15px;
+	border:solid;
+	border-color:#FF8000;
+	border-width:medium;
+	text-align:center;
+}
+
+.Menu2
+{
+	margin-top:50px;
+	padding:15px;
+	border:solid;
+	border-color:#278DED;
+	border-width:medium;
+	border-bottom-style:none;
+	border-left-style:none;
+	border-right-style:none;
+	text-align:center;
+}

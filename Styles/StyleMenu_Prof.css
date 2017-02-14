@@ -1,0 +1,283 @@
+body
+{
+	font-family: Comic Sans MS;
+	color:#848484;
+}
+
+#menu
+{
+	padding:0;
+	margin:10;
+	list-style: none;
+	float: left;
+}
+
+#menu ul
+{
+	padding:0;
+	margin:0;
+	list-style: none;
+	text-align: center;
+}
+
+#menu li 
+{
+	display:inline-block;
+	vertical-align: top;
+	position: relative;
+}
+#menu li li 
+{
+	display:inherit;
+}
+
+#menu a 
+{
+	display:block;
+	padding:5px 50px;
+	text-decoration: none;
+	color:#fff;
+	font-family:Comic Sans MS;
+}
+
+#menu ul li a 
+{
+	padding:5px 8px;
+}
+#menu ul 
+{
+	position: absolute;
+	z-index: 1000;
+	min-width:100%;
+	white-space: nowrap;
+	text-align: left;
+}
+#menu ul ul 
+{
+	left:100%;
+	top:0;
+	overflow: hidden;
+	max-width: 0;
+	min-width: 0;
+	transition: 0.3s all;
+}
+#menu ul li:hover ul 
+{
+	max-width: 30em;
+}
+#menu ul li 
+{
+	max-height:0;
+	overflow: hidden;
+	transition:all 0.8s;
+}
+#menu li li li 
+{
+	max-height: inherit;
+}
+#menu li:hover li 
+{
+	max-height: 15em;
+	overflow: visible;
+}
+/* background des liens menus */
+.violet
+{
+	background-color: #65537A;
+	background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+.violet li 
+{
+    background:#2A2333
+}
+.violet li:hover 
+{
+    background:#65537A
+}
+.bleu {
+	background-color: #729EBF;
+	background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+.bleu li 
+{
+    background:#333A40
+}
+.bleu li:hover 
+{
+    background:#729EBF
+}
+.orange 
+{
+	background-color: #F6AD1A;
+	background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+.orange li
+{
+    background-color:#9F391A;
+}
+.orange li:hover
+{
+    background:#F6AD1A
+}
+
+#menu li:hover 
+{
+    background-image:none;
+}
+#menu li:hover a, .menu li li:hover a 
+{
+    color:#000
+}
+#menu li:hover li a, #menu li:hover li li a 
+{
+    color:#fff
+}
+#menu li:hover a, #menu li li:hover a, #menu li li li:hover a
+{
+    color:#000
+}
+
+.bar {
+  width: 30em;
+  height: 1em;
+  position: relative;
+  border-radius: 0.5em;
+  background: #f2f2f2;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  margin-left:30%;
+}
+.bar .percentage {
+  position: relative;
+  font-size: 1em;
+  background: tomato;
+  height: 1em;
+  border-radius: 0.5em;
+}
+
+.has-tip:before, .has-tip:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+}
+.has-tip:before {
+  bottom: -10px;
+  right: -5px;
+  border: 5px solid;
+  border-color: transparent transparent tomato transparent;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+.has-tip:hover:before, .has-tip.active:before {
+  opacity: 1;
+}
+.has-tip:after {
+  content: attr(perc);
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+  padding: 0.6em 1em;
+  border-radius: 2em;
+  line-height: 1;
+  color: #fff;
+  background: tomato;
+  -webkit-transform: translateX(50%) translateY(100%);
+          transform: translateX(50%) translateY(100%);
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.2s;
+  transition: opacity 0.1s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.1s;
+  transition: transform 0.2s, opacity 0.1s, -webkit-transform 0.2s;
+}
+.has-tip:hover:after, .has-tip.active:after {
+  opacity: 1;
+  -webkit-transform: translateX(50%) translateY(100%) translateY(10px);
+          transform: translateX(50%) translateY(100%) translateY(10px);
+}
+
+.Titre
+{
+	background-image:url(/PrepaConcours/Images/Logo.png);
+	background-repeat:no-repeat;
+	Background-size:750px;
+	background-color:#92C6F6;
+	text-align: center; 
+	font-size: 50px;
+	color:white;
+	clear:center;
+	Text-Shadow:#A4A4A4 3px 3px, #A4A4A4 3px 3px;
+	padding:10px;
+}
+
+.BandeauSup
+{
+	background-image:url(/PrepaConcours/Images/header_Fond.png);
+	background-size:1130px;
+	background-repeat:repeat-x;
+	padding:10px;
+	color:black;
+}
+
+.Deconnexion
+{	
+	text-align:right;
+}
+
+.Intro1
+{
+	float:right;
+	padding:10px;
+	text-align:center;
+	border:3pt;
+	border-color:#278DED;
+	border-style:outset;
+	width:45%;	
+}
+
+.Intro2
+{
+	padding:10px;
+	text-align:center;
+	border:3pt;
+	border-color:#278DED;
+	border-style:outset;
+	width:45%;
+}
+
+.clear{
+	clear:both;
+}
+
+#pageContent
+{
+	margin-top:20px;
+	border:4pt solid;
+	border-color:#FF8000;
+	padding:20px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bar
+{
+	visibility:hidden;
+}
+
+.ImportExport
+{
+	margin-top:50px;
+	margin-left:35%;
+	margin-right:35%;
+	padding:15px;
+	border:3pt solid;
+	border-color:#278DED;
+	border-bottom-style:none;
+	border-left-style:none;
+	border-right-style:none;
+	text-align:center;
+	
+}
+.bonjour
+{
+	float: right;
+}

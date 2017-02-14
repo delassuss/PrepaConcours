@@ -1,0 +1,46 @@
+body
+{
+	font-family:Comic Sans MS;
+	color:#848484;
+}
+
+.DateHeure
+{
+	text-align:center;
+	margin-top:15px;
+	color:black;
+}
+
+.Erreur
+{
+	color:#FF0000;
+	Text-Decoration:Underline;
+}
+
+.Titre
+{
+	background-image:url(/PrepaConcours/Images/Logo.png);
+	Background-size:750px;
+	background-repeat:no-repeat;
+	background-color:#92C6F6;
+	text-align: center; 
+	font-size: 50px;
+	color:white;
+	clear:center;
+	Text-Shadow:#A4A4A4 3px 3px, #A4A4A4 3px 3px;
+	padding:10px;
+}
+
+.Intro
+{
+	margin-top:100px;
+	text-align:center;
+	color:#000000;
+	Font-Weight: Bold;
+}
+
+.DivConnexion
+{
+	text-align:center;
+	margin-top:35px;
+}
