@@ -1,7 +1,7 @@
 <?php
 
 // commentaire test hugo
-	
+	// commentaire yohann
 	$erreur = ' ';
 	// on teste si le visiteur a soumis le formulaire de connexion
 	if (isset($_POST['Connexion']) && $_POST['Connexion'] == 'CONNEXION')
